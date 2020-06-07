@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#f5f7f8"
+    tools:context=".fragment.LoginFragment">
+<RelativeLayout
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/inputbox"
+        android:layout_marginTop="7dp"
+        android:inputType="text"
+        android:textSize="12dp"
+        android:textColor="#666"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:hint="Email"
+        android:elevation="3dp"
+        />
+    <EditText
+        android:id="@+id/Password"
+        android:layout_below="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/inputbox"
+        android:layout_marginTop="7dp"
+        android:inputType="text"
+        android:textSize="12dp"
+        android:textColor="#666"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:hint="Password"
+        android:elevation="3dp"
+        />
+    <Button
+        android:id="@+id/SignIn"
+        android:layout_below="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/submit_button"
+        android:text="LOGIN"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-light"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:id="@+id/or"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/SignIn"/>
+    <Button
+        android:id="@+id/GoogleSignIn"
+        android:paddingLeft="20dp"
+        android:layout_below="@+id/or"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/inputbox"
+         android:drawableLeft="@drawable/googleicon"
+        android:text="Sign in with Google"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed-light"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
+</FrameLayout>
